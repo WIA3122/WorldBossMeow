@@ -98,3 +98,61 @@ body {
     max-height: 80%;
     object-fit: contain;
 }
+/* Body tag */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Background color for body */
+}
+
+/* Header tag */
+header {
+    background-color: #333; /* Dark background color for header */
+    color: #fff; /* White text color for header */
+    padding: 10px;
+}
+
+/* Nav tag */
+nav {
+    background-color: #666; /* Medium dark background color for navigation */
+    padding: 10px;
+}
+
+/* Main tag */
+main {
+    background-color: #fff; /* White background color for main content */
+    font-size: 18px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Footer tag */
+footer {
+    background-color: #333; /* Dark background color for footer */
+    color: #fff; /* White text color for footer */
+    padding: 10px;
+}
+
+/* li tag */
+li {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* h1 tag */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark text color for h1 */
+}
+
+/* p tag */
+p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
