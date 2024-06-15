@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Màu xám nhạt */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.note {
+    background: #f9f9f9;
+    border-left: 4px solid #ffeb3b;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.guild-strategy {
+    margin: 20px 0;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+.guild {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.guild-item {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: calc(33.333% - 20px);
+}
+
+.guild-item img {
+    width: 100%;
+    height: auto; /* Để ảnh tự động điều chỉnh chiều cao để giữ tỷ lệ khung hình */
+    object-fit: contain; /* Hiển thị toàn bộ ảnh trong khung hình, không bị cắt bớt */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng transform khi hover */
+}
+
+.guild-item img:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+}
+
+@media (max-width: 768px) {
+    .guild-item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .guild-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8); /* Màu nền overlay đen với độ mờ 80% */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
